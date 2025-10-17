@@ -1,4 +1,4 @@
-# SOT:UI:\_\_JASON\_\_
+# SOT:UI:JASON
 
 Solution to the second round of the __GoldenSet Collective__ intern to hire program
 
