@@ -1,3 +1,5 @@
-// should export an array of registered email strings
+// should export an array of registered email strings, with all of the emails in lowercase
 
-export default ["test@gmail.com"]
+const raw_data = ["test@gmail.com"]
+
+export default raw_data.map(email => email.toLowerCase());

@@ -94,6 +94,9 @@ For determining areas to research and upskill in before getting started.
 `Agent Mode | Copilot (VsCode)`
 Generating tests, documentation, for quick refactors and checking for errors.
 
+`Cursor`
+For larger scale refactoring
+
 ### 🔍 In your opinion, where are the places you could do better?
 
 I hardcoded the list of registered emails in registeredEmails.ts, which would definately be an issue if this was expanded.  

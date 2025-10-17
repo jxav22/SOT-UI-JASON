@@ -1,3 +1,4 @@
+"use client";
 /**
  * A user registration form component that utilizes custom and native validation.
  * Displays status feedback (idle, warning, failure, success) based on validation results.
