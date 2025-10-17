@@ -1,10 +1,10 @@
-# 🚀 SOT:UI:\_\_JASON\_\_
+# SOT:UI:\_\_JASON\_\_
 
-Solution to the second round of the GoldenSet intern to hire program
+Solution to the second round of the __GoldenSet Collective__ intern to hire program
 
-## 🛠️ Setting everything up
+## 🛠️ SET UP
 
-### ▶️ How to run the project
+### ▶️ How to run
 
 Clone the repository
 
@@ -19,25 +19,28 @@ Install dependencies
 npm install
 ```
 
-Run it
+Do this
 
 ```bash
 npm run dev
 ```
 
-### ✅ How to run the tests
+### ✅ How to run tests
 
 ```bash
 npm test
 ```
+<img width="702" height="711" alt="image" src="https://github.com/user-attachments/assets/2adb294f-928a-40d5-a6c1-b46f79389cca" />
 
 ## ❓ Q & A
 
 ### 🧭 What was your approach to solving the problem?
 
-#### 📝 Overview
+#### 📝 Strategy
 
-My goal was to avoid re-implementing features from scratch, so I started off by researching what was out there. I found this tutorial on MDN which was fairly useful:
+As I was aiming to not use any external libraries, my goal was to avoid re-implementing form functionality from scratch. I started off by doing some research on webforms.
+
+I found this tutorial on MDN which was fairly useful:
 
 [https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms)
 
@@ -51,11 +54,11 @@ After a bit of experimentation this resulted in the `ValidatedInput.tsx` compone
 
 ```
 SOT-UI-JASON/
-├── README.md                # Project overview and setup instructions
+├── README.md                # Project overview
 ├── app/
 │   └── page.tsx             # Main page
 ├── components/
-│   ├── Form.tsx             # Form component with JsDocs
+│   ├── Form.tsx             # Main form component
 │   ├── Form.module.css      # BEM-style CSS classes for form styling
 │   ├── ValidatedInput.tsx   # Custom input component using the Constraint Validation API
 ├── data/                    
@@ -63,7 +66,7 @@ SOT-UI-JASON/
 ├── utils/
 │   ├── validators.ts        # Validation functions for the ValidatedInput component
 │   ├── validators.test.ts   # Comprehensive unit testing for the validation functions
-│   ├── enums.ts             # Declares the enums used in form state management
+│   ├── enums.ts             # Enums used in form state management
 
 ```
 #### 📐 Conventions
@@ -86,22 +89,17 @@ Component level JsDocs:
 
 ### 🤖 How much AI did you use?
 
-I used a good mix of AI tooling to complete this
-
 `ChatGPT`
-For determining areas to research and upskill in before getting started. 
+For determining areas to research before getting started, and for verifying best practices.  
 
-`Agent Mode | Copilot (VsCode)`
-Generating tests, documentation, for quick refactors and checking for errors.
-
-`Cursor`
-For larger scale refactoring
+`Agent Mode (VsCode) | Cursor`
+Generating tests, documentation, for refactoring and checking for errors.
 
 ### 🔍 In your opinion, where are the places you could do better?
 
-I hardcoded the list of registered emails in registeredEmails.ts, which would definately be an issue if this was expanded.  
+I hardcoded the list of registered emails in registeredEmails.ts, which would definately be an issue if this was worked on more. 
 
-A change that I could do next is storing it locally, with something like sqllite, or hosting it somewhere else and calling the data from an API.
+A change that I could do next is experimenting with Postgres or SQLlite for a more robust storage solution. 
 
-It would also be cool to add more comprehensive unit testing and to create a framework for validation patterns. 
+It would also be cool to add more comprehensive unit testing, and to experiment with making the framework for pattern validation a bit more standardized. 
 
