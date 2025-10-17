@@ -43,7 +43,7 @@ function ValidatedInput({customValidators, onWarning,...attributes}: Props) {
     }
 
     return (
-            <input onInput={handleInputChange} {...attributes} />
+            <input onInput={handleInputChange} {...attributes} suppressHydrationWarning={true} />
     )
 }
 
