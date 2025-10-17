@@ -1,3 +1,11 @@
+/**
+ * A user registration form component that utilizes custom and native validation.
+ * Displays status feedback (idle, warning, failure, success) based on validation results.
+ * Integrates with `ValidatedInput` for each field, supporting custom validators and warning callbacks.
+ *
+ * @param {Props} props - Component props
+ * @returns {JSX.Element} The registration form element with validation and status styling.
+ */
 import React from 'react'
 import styles from './Form.module.css'
 import { Status } from '@/utils/enums';
@@ -6,6 +14,7 @@ import ValidatedInput from './ValidatedInput'
 import { isUnregisteredEmail, endsWithGmail, isComplexPassword } from '@/utils/validators';
 
 type Props = {}
+
 
 function Form({ }: Props) {
     const [status, setStatus] = React.useState<Status>(Status.Idle);

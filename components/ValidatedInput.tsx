@@ -1,3 +1,13 @@
+/**
+ * An input wrapper that runs native browser validation first and then runs
+ * optional custom validators. When a validator fails, it sets the custom
+ * validity message and optionally calls onWarning.
+ *
+ * @param {Props} props - Component props
+ * @param {Array<Function>} props.customValidators - custom validator functions
+ * @param {Function} props.onWarning - callback when validation fails
+ * @returns {JSX.Element} input element with validation behavior
+ */
 import React from 'react'
 import { ValidationResponse } from '@/utils/validators';
 
