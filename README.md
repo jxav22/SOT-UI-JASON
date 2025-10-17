@@ -37,7 +37,7 @@ npm test
 
 #### 📝 Strategy
 
-As I was aiming to not use any external libraries, my goal was to avoid re-implementing form functionality from scratch. I started off by doing some research on webforms.
+As I was aiming to not use any external libraries, I tried to find ways to avoid re-implementing form functionality from scratch. To start this off I did some research on webforms.
 
 I found this tutorial on MDN which was fairly useful:
 
