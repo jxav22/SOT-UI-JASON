@@ -100,7 +100,7 @@ function Form({ }: Props) {
                     customValidators={[isComplexPassword]}
                 />
             </p>
-            <button type="submit" onClick={validateForm}>Submit</button>
+            <button type="submit" onClick={validateForm} suppressHydrationWarning={true}>Submit</button>
         </form>
     );
 }
