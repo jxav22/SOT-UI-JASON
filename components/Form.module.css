@@ -1,0 +1,76 @@
+/*
+    Form.module.css
+    Conventions
+    - BEM-like: block `.form`, elements `.form__title`, `.form__row`, modifiers `.form--<state>`
+    Roles
+    - `.form`             -> block container for the form
+    - `.form__title`      -> form heading
+    - `.form__row`        -> logical rows/controls within the form
+    - `.form--idle`       -> idle visual state
+    - `.form--warning`    -> warning visual state (interactive)
+    - `.form--failure`    -> failure/error visual state
+    - `.form--success`    -> success visual state
+*/
+
+.form {
+    /* color tokens */
+    --form-border: #ced4da;              /* neutral gray border */
+    --form-bg-idle: #ffffff;              /* white background for idle */
+    --form-bg-warning: #fff3cd;           /* warning yellow */
+    --form-bg-failure: #f8d7da;           /* danger red */
+    --form-bg-success: #d1e7dd;           /* success green */
+
+    /* sizing */
+    --form-padding: 20px;
+    --form-radius: 5px;
+    --form-max-width: 400px;
+
+    border: 2px solid var(--form-border);
+    padding: var(--form-padding);
+    border-radius: var(--form-radius);
+    max-width: var(--form-max-width);
+    margin: 0 auto;
+    background-color: var(--form-bg-idle);
+    box-sizing: border-box;
+}
+
+/* Element classes */
+
+.form__title {
+    text-align: center;
+    margin: 0 0 20px 0;
+    font-size: 1.25rem;
+}
+
+.form__row {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+/* State modifiers (BEM style) */
+
+.form--idle {
+    background-color: var(--form-bg-idle);
+}
+
+
+.form--warning {
+    background-color: var(--form-bg-warning);
+    box-shadow: 0 0 0 3px rgba(250,172,5,0.12);
+}
+
+
+.form--failure {
+    background-color: var(--form-bg-failure);
+    box-shadow: 0 0 0 3px rgba(255,0,0,0.06);
+}
+
+
+.form--success {
+    background-color: var(--form-bg-success);
+    box-shadow: 0 0 0 3px rgba(0,128,0,0.06);
+}
+
