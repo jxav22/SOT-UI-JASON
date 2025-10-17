@@ -1,7 +1,7 @@
-export const metadata = {
-  title: "App Router",
-};
+"use client";
+import Form from "@/components/Form";
+
 
 export default function Page() {
-  return <h1>App Router</h1>;
+  return <Form />;
 }
