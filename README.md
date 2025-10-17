@@ -4,7 +4,7 @@ Solution to the second round of the __GoldenSet Collective__ intern to hire prog
 
 ## 🛠️ SET UP
 
-### ▶️ How to run
+### How to run 
 
 Clone the repository
 
@@ -19,18 +19,17 @@ Install dependencies
 npm install
 ```
 
-Do this
+Run the app
 
 ```bash
 npm run dev
 ```
 
-### ✅ How to run tests
+### How to run tests
 
 ```bash
 npm test
 ```
-<img width="702" height="711" alt="image" src="https://github.com/user-attachments/assets/2adb294f-928a-40d5-a6c1-b46f79389cca" />
 
 ## ❓ Q & A
 
@@ -71,21 +70,21 @@ SOT-UI-JASON/
 ```
 #### 📐 Conventions
 
-Semantic commit messages:
+- Semantic commit messages:
 
-    See this c:
+See this:
     
-    https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
+[https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716](https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716)
 
-BEM based style classes:
+- BEM based style classes:
 
-    [https://getbem.com/](https://getbem.com/)
+[https://getbem.com/](https://getbem.com/)
 
-    Used in `Form.module.css`
+Used in `Form.module.css`
 
-Component level JsDocs:
+- Component level JsDocs:
 
-    Used in `Form.tsx` and `ValidatedInput.tsx`
+Used in `Form.tsx` and `ValidatedInput.tsx`
 
 ### 🤖 How much AI did you use?
 
